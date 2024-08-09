@@ -1,0 +1,81 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Go RestAPI Mux",
+    "collectionId": "3f0cf8ab-a273-4f6f-9454-887bec2c721a",
+    "dateExported": "2024-08-09T16:01:23.103Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "cbe26723-c694-442e-ba59-69fc2d0d497d",
+            "colId": "3f0cf8ab-a273-4f6f-9454-887bec2c721a",
+            "containerId": "",
+            "name": "Get All Products",
+            "url": "http://127.0.0.1:3000/products",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-08-09T15:51:31.563Z",
+            "modified": "2024-08-09T15:51:31.563Z",
+            "headers": []
+        },
+        {
+            "_id": "34b974dd-0b81-413c-813a-6358bfea2211",
+            "colId": "3f0cf8ab-a273-4f6f-9454-887bec2c721a",
+            "containerId": "",
+            "name": "Get Product by ID",
+            "url": "http://127.0.0.1:3000/products/1",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-08-09T15:51:47.356Z",
+            "modified": "2024-08-09T15:53:12.697Z",
+            "headers": []
+        },
+        {
+            "_id": "4db10261-60b5-465e-8779-6c906eb3fc76",
+            "colId": "3f0cf8ab-a273-4f6f-9454-887bec2c721a",
+            "containerId": "",
+            "name": "Create Product",
+            "url": "http://127.0.0.1:3000/products",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-08-09T15:52:04.579Z",
+            "modified": "2024-08-09T15:52:43.706Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": 2,\n  \"nama\": \"Pensil\",\n  \"stok\": 50,\n  \"harga\": 1500\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "987c3223-ad48-4b2f-b5cb-8c2123d082a4",
+            "colId": "3f0cf8ab-a273-4f6f-9454-887bec2c721a",
+            "containerId": "",
+            "name": "Update Product by ID",
+            "url": "http://127.0.0.1:3000/products/1",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-08-09T15:53:42.908Z",
+            "modified": "2024-08-09T15:59:21.440Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nama\": \"Buku Tulis\",\n  \"stok\": 50,\n  \"harga\": 5000\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "4a58f0a5-597e-404e-a630-f96d01d15434",
+            "colId": "3f0cf8ab-a273-4f6f-9454-887bec2c721a",
+            "containerId": "",
+            "name": "Delete Product by ID",
+            "url": "http://127.0.0.1:3000/products/1",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-08-09T16:00:31.362Z",
+            "modified": "2024-08-09T16:00:37.036Z",
+            "headers": []
+        }
+    ],
+    "ref": "lPmsLtW6t4l8GwY-8pwkTmVN89Tq4uWiuJzQM0Vu262w-7j77-A0mTlA6GVr29k9PTJz6rmzo5p3ikT4Z-OeAg"
+}
