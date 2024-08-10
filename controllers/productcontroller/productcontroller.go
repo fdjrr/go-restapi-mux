@@ -38,6 +38,7 @@ func Create(w http.ResponseWriter, r *http.Request) {
 
 	if err := models.DB.Create(&product).Error; err != nil {
 		ResponseError(w, http.StatusInternalServerError, err.Error())
+		return
 	}
 
 	ResponseJson(w, http.StatusCreated, product)
@@ -110,5 +111,7 @@ func Delete(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	ResponseJson(w, http.StatusOK, map[string]string{"message": "Product deleted successfully!"})
+	response := map[string]string{"message": "Product deleted successfully!"}
+
+	ResponseJson(w, http.StatusOK, response)
 }

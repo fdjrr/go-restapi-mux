@@ -2,7 +2,7 @@
     "clientName": "Thunder Client",
     "collectionName": "Go RestAPI Mux",
     "collectionId": "3f0cf8ab-a273-4f6f-9454-887bec2c721a",
-    "dateExported": "2024-08-09T16:01:23.103Z",
+    "dateExported": "2024-08-10T03:00:15.161Z",
     "version": "1.2",
     "folders": [],
     "requests": [
@@ -11,35 +11,45 @@
             "colId": "3f0cf8ab-a273-4f6f-9454-887bec2c721a",
             "containerId": "",
             "name": "Get All Products",
-            "url": "http://127.0.0.1:3000/products",
+            "url": "http://127.0.0.1:3000/api/products",
             "method": "GET",
             "sortNum": 10000,
             "created": "2024-08-09T15:51:31.563Z",
-            "modified": "2024-08-09T15:51:31.563Z",
-            "headers": []
+            "modified": "2024-08-10T02:26:53.032Z",
+            "headers": [
+                {
+                    "name": "Cookie",
+                    "value": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImZhZGpyaXIuY28uaWRAZ21haWwuY29tIiwiaXNzIjoiZ28tcmVzdGFwaS1tdXgiLCJleHAiOjE3MjMyNTY4NTh9.NLNyYeDboou6v5PN8os7NMxENdPLoc3FABFzlzl9uUQ.eyJFbWFpbCI6ImZhZGpyaXIuY28uaWRAZ21haWwuY29tIiwiaXNzIjoiZ28tcmVzdGFwaS1tdXgiLCJleHAiOjE3MjMyNTUxOTV9.JKd85uMyAbAdmz2gdU_kc248ffimaLSgBAmmNSvsWRQ;"
+                }
+            ]
         },
         {
             "_id": "34b974dd-0b81-413c-813a-6358bfea2211",
             "colId": "3f0cf8ab-a273-4f6f-9454-887bec2c721a",
             "containerId": "",
             "name": "Get Product by ID",
-            "url": "http://127.0.0.1:3000/products/1",
+            "url": "http://127.0.0.1:3000/api/products",
             "method": "GET",
             "sortNum": 20000,
             "created": "2024-08-09T15:51:47.356Z",
-            "modified": "2024-08-09T15:53:12.697Z",
-            "headers": []
+            "modified": "2024-08-10T02:31:30.957Z",
+            "headers": [
+                {
+                    "name": "Cookie",
+                    "value": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImZhZGpyaXIuY28uaWRAZ21haWwuY29tIiwiaXNzIjoiZ28tcmVzdGFwaS1tdXgiLCJleHAiOjE3MjMyNTcxMzJ9.WcVU_vKd_GnT80Q9_eyRNrCXiM8dc1ihb2FrihLBnEg"
+                }
+            ]
         },
         {
             "_id": "4db10261-60b5-465e-8779-6c906eb3fc76",
             "colId": "3f0cf8ab-a273-4f6f-9454-887bec2c721a",
             "containerId": "",
             "name": "Create Product",
-            "url": "http://127.0.0.1:3000/products",
+            "url": "http://127.0.0.1:3000/api/products",
             "method": "POST",
             "sortNum": 30000,
             "created": "2024-08-09T15:52:04.579Z",
-            "modified": "2024-08-09T15:52:43.706Z",
+            "modified": "2024-08-10T02:17:35.666Z",
             "headers": [],
             "body": {
                 "type": "json",
@@ -52,11 +62,11 @@
             "colId": "3f0cf8ab-a273-4f6f-9454-887bec2c721a",
             "containerId": "",
             "name": "Update Product by ID",
-            "url": "http://127.0.0.1:3000/products/1",
+            "url": "http://127.0.0.1:3000/api/products/1",
             "method": "PUT",
             "sortNum": 40000,
             "created": "2024-08-09T15:53:42.908Z",
-            "modified": "2024-08-09T15:59:21.440Z",
+            "modified": "2024-08-10T02:17:38.023Z",
             "headers": [],
             "body": {
                 "type": "json",
@@ -69,13 +79,59 @@
             "colId": "3f0cf8ab-a273-4f6f-9454-887bec2c721a",
             "containerId": "",
             "name": "Delete Product by ID",
-            "url": "http://127.0.0.1:3000/products/1",
+            "url": "http://127.0.0.1:3000/api/products/1",
             "method": "DELETE",
             "sortNum": 50000,
             "created": "2024-08-09T16:00:31.362Z",
-            "modified": "2024-08-09T16:00:37.036Z",
+            "modified": "2024-08-10T02:17:40.132Z",
+            "headers": []
+        },
+        {
+            "_id": "79610ffe-2bb5-4527-a29c-6d392e2634ac",
+            "colId": "3f0cf8ab-a273-4f6f-9454-887bec2c721a",
+            "containerId": "",
+            "name": "Register",
+            "url": "http://127.0.0.1:3000/api/register",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-08-10T01:46:38.266Z",
+            "modified": "2024-08-10T02:17:43.582Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Fadjrir Herlambang\",\n  \"email\": \"fadjrir.co.id@gmail.com\",\n  \"password\": \"password\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "0b23d6d9-b0a8-48f8-a032-c1ee64738c26",
+            "colId": "3f0cf8ab-a273-4f6f-9454-887bec2c721a",
+            "containerId": "",
+            "name": "Login",
+            "url": "http://127.0.0.1:3000/api/login",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-08-10T01:58:14.601Z",
+            "modified": "2024-08-10T02:18:00.731Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"fadjrir.co.id@gmail.com\",\n  \"password\": \"password\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "dc16cf12-2f0d-4dd7-8e71-f2d5089509cd",
+            "colId": "3f0cf8ab-a273-4f6f-9454-887bec2c721a",
+            "containerId": "",
+            "name": "Logout",
+            "url": "http://127.0.0.1:3000/api/logout",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-08-10T02:01:08.789Z",
+            "modified": "2024-08-10T02:17:56.438Z",
             "headers": []
         }
     ],
-    "ref": "lPmsLtW6t4l8GwY-8pwkTmVN89Tq4uWiuJzQM0Vu262w-7j77-A0mTlA6GVr29k9PTJz6rmzo5p3ikT4Z-OeAg"
+    "ref": "lPmsLtW6t4l8GwY-8pwkTgmN1L-zLFKREGrQgVz4HkjLvht4RjMvFD0kZ8a6m3CmR4H_9UFpXSVwrDe19PGAqg"
 }
